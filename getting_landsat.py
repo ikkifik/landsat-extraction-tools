@@ -5,10 +5,10 @@ from google.oauth2 import service_account
 import pandas as pd
 import time
 
-key_path = ""
+KEY_PATH = ""
 
 credentials = service_account.Credentials.from_service_account_file(
-    key_path, scopes=["https://www.googleapis.com/auth/cloud-platform"],
+    KEY_PATH, scopes=["https://www.googleapis.com/auth/cloud-platform"],
 )
 client = bigquery.Client(credentials=credentials, project=credentials.project_id,)
 
