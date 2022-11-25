@@ -3,10 +3,9 @@
 from google.cloud import bigquery
 from google.oauth2 import service_account
 import pandas as pd
-import tqdm
 import time
 
-key_path = "fik-labs-2a7dd813e40a.json"
+key_path = ""
 
 credentials = service_account.Credentials.from_service_account_file(
     key_path, scopes=["https://www.googleapis.com/auth/cloud-platform"],
